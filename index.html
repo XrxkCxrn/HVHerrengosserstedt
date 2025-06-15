@@ -1,0 +1,244 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heimatverein Herrengosserstedt e.V.</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: gray;
+      margin: 0;
+    }
+    header {
+      background-color: #2E8B57;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #333;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+    nav li {
+      margin: 0;
+    }
+    nav a {
+      display: block;
+      padding: 15px 20px;
+      color: white;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background-color: #575757;
+    }
+    main {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+      background-color: lightgray;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      color: darkgreen;
+    }
+    .termine li {
+      background: #eee;
+      margin: 10px 0;
+      padding: 10px;
+      border-left: 4px solid #2E8B57;
+    }
+    footer {
+      background-color: #2E8B57;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+    img {
+      max-width: 100%;
+      height: 50%;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+	
+	.galerie {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.bild-container {
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+
+.bild-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+@media (max-width: 600px) {
+  .galerie {
+    grid-template-columns: 1fr; /* 1 Spalte auf kleineren Bildschirmen */
+  }
+}
+
+
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #333; /* oder was du schon nutzt */
+  }
+  
+  .bild-container {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.bild-container img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.bild-container figcaption {
+  font-size: 0.95em;
+  color: #ccc;
+  margin-top: 5px;
+}
+
+.bildtext {
+  text-align: center;
+  font-size: 0.95em;
+  color: #222;
+  margin-top: 8px;
+}
+
+	 </style>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Lightbox CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+
+<meta name="description" content="Heimatverein Herrengosserstedt e.V. – Unser Dorfleben, Veranstaltungen und Gemeinschaft erleben.">
+<meta property="og:title" content="Heimatverein Herrengosserstedt e.V.">
+<meta property="og:image" content="URL_ZUM_LOGO_ODER_BILD.jpg">
+
+</head>
+<!-- Lightbox JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+<body>
+  <header>
+    <h1>Heimatverein Herrengosserstedt e.V.</h1>
+    <p>Gemeinsam für unser schönes Dorf</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#start">Start</a></li>
+      <li><a href="#verein">Über uns</a></li>
+      <li><a href="#termine">Termine</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+	  <li><a href="#galerie">Galerie</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="start">
+      <h2>Willkommen in Herrengosserstedt</h2>
+  <p>Herrengosserstedt liegt im Burgenlandkreis in Sachsen-Anhalt, direkt an der Grenze zu Thüringen. Unser Dorf ist geprägt von ländlicher Ruhe, viel Natur, einer langen Geschichte – und vor allem von einer lebendigen Dorfgemeinschaft.</p>
+  <p>Der <strong>Heimatverein Herrengosserstedt e.V.</strong> setzt sich dafür ein, genau das zu bewahren: unser Miteinander, unsere Traditionen und das, was unseren Ort besonders macht. Wir organisieren Feste, pflegen Erinnerungen, erzählen Geschichten weiter – und machen gemeinsam Neues möglich.</p>
+  <p>Egal ob jung oder alt, zugezogen oder hier geboren – bei uns ist jeder willkommen, der sich für unser Dorf engagieren oder einfach dabei sein möchte.</p>
+  <p><em>Schön, dass Sie hier sind!</em></p>
+<img src="Bilder/Herrengosserstedt_Kirche.jpg" alt="Kirche in Herrengosserstedt" style="max-width:100%; border-radius: 8px;">
+    </section>
+
+    
+	  <section id="verein">
+  <h2>Über unseren Verein</h2>
+  <p>Der Heimatverein Herrengosserstedt e.V. wurde gegründet, um das kulturelle Leben im Dorf aktiv mitzugestalten und das Gemeinschaftsgefühl zu stärken. Wir engagieren uns für den Erhalt regionaler Traditionen, kümmern uns um ortsgeschichtliche Themen und bringen mit vielfältigen Veranstaltungen Menschen zusammen.</p>
+  <p>Ob Heimatfest, Frühjahrsputz, Ausstellungen, gesellige Abende oder Mitmachaktionen – bei uns geht es um das Miteinander. Dabei liegt uns vor allem der Austausch zwischen den Generationen am Herzen. Denn was früher selbstverständlich war, ist heute oft besonders wertvoll: dass man sich kennt, hilft und zusammen etwas auf die Beine stellt.</p>
+  <p>Unsere Mitglieder kommen aus ganz unterschiedlichen Altersgruppen und Lebensbereichen – alle bringen sich auf ihre eigene Art ein. Und genau das macht unseren Verein lebendig.</p>
+</section>
+
+
+    <section id="termine">
+      <h2>Termine 2025</h2>
+      <ul class="termine">
+        <li><strong>20. Juni 2025:</strong> Heimatfest</li>
+		<li><strong>21. Juni 2025:</strong> Heimatfest</li>
+        <li><strong>22. Juni 2025:</strong> Heimatfest</li>
+       </ul>
+	  <h3>Flyer zum Heimatfest</h3>
+  <a href="Heimatfest_Flyer.jpg" data-lightbox="flyer" data-title="Flyer zum Heimatfest 2025">
+    <img src="Bilder/Flyer_Heimatfest_2025.jpg" alt="Flyer Heimatfest" style="max-width: 300px; border-radius: 8px;">
+  </a>
+   <a href="Heimatfest_Flyer.jpg" data-lightbox="flyer" data-title="Flyer zum Heimatfest 2025">
+    <img src="Bilder/Flyer_Heimatfest_2025 (2).jpg" alt="Flyer Heimatfest" style="max-width: 300px; border-radius: 8px;">
+  </a>
+    </section>
+
+    <section id="kontakt">
+      <h2>Kontakt</h2>
+      <p>Heimatverein Herrengosserstedt e.V.<br>
+      Kulturhausstraße 2<br>
+      06647 Herrengosserstedt</p>
+     <p>Kontakt: <a href="mailto:HeimatvereinHerrengosserstedt@web.de">HeimatvereinHerrengosserstedt@web.de</a></p>
+<p>Folgen Sie uns auf:  
+  <a href="https://www.instagram.com/heimatverein_herrengosserstedt?igsh=aW5ic3YxbnJxZGhk" target="_blank">Instagram</a> |  
+  <a href="https://www.facebook.com/p/Heimatverein-Herrengosserstedt-eV-100068714625914/" target="_blank">Facebook</a>
+  
+</p>
+
+    </section>
+	<section id="galerie">
+  <h2>Fotogalerie</h2>
+  <p>Ein kleiner Einblick in unser Vereinsleben und unser schönes Dorf.</p>
+	<div class="galerie">
+  <div class="bild-container">
+    <img src="Bilder/Festumzug_1150_Jahre.jpg" alt="Festumzug 1150 Jahre">
+    <p class="bildtext"><strong>Festumzug 1150 Jahre</strong></p>
+  </div>
+
+  <div class="bild-container">
+    <img src="Bilder/Heimatfest_2024.jpg" alt="Heimatfest 2024">
+    <p class="bildtext"><strong>Heimatfest 2024</strong></p>
+  </div>
+
+  <div class="bild-container">
+    <img src="Bilder/Osterspaziergang_2024.jpg" alt="Osterspaziergang 2024">
+    <p class="bildtext"><strong>Osterspaziergang 2024</strong></p>
+  </div>
+
+  <div class="bild-container">
+    <img src="Bilder/Programm_Heimatfest_2024.jpg" alt="Programm Heimatfest 2024">
+    <p class="bildtext"><strong>Programm Heimatfest 2024</strong></p>
+  </div>
+</div>
+
+</section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Heimatverein Herrengosserstedt e.V.</p>
+  </footer>
+</body>
+</html>
